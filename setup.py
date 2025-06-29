@@ -1,0 +1,33 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='cut3r',
+    version='0.1.0',
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
+    install_requires=[
+        'numpy==1.26.4',
+        'torch',
+        'torchvision',
+        'roma',
+        'gradio',
+        'matplotlib',
+        'tqdm',
+        'opencv-python',
+        'scipy',
+        'einops',
+        'trimesh',
+        'tensorboard',
+        'pyglet<2',
+        'huggingface-hub[torch]>=0.22',
+        'viser',
+        'gradio',
+        'lpips',
+        'hydra-core',
+        'pillow==10.3.0',
+        'h5py',
+        'accelerate',
+        'transformers',
+        'scikit-learn',
+    ],
+)
